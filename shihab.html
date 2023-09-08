@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<meta charset="utf-8">
+	<title>Md. Sahab Uddin's Resume</title>
+	<meta name="viewport" content="width=device-width">
+	<style>
+		/**
+ * "Variables"
+ */
+		:root {
+			--font-heading: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
+		}
+
+		h1,
+		header>h1>span,
+		header>ul>li:before {
+			color: #9BBB59;
+		}
+
+		/**
+ * Style
+ */
+
+		* {
+			margin: 0;
+		}
+
+		html {
+			/* background: #9BA2B0; */
+			font-size: 16px;
+		}
+
+		body {
+			width: 74em;
+			padding: 3em 5%;
+			box-sizing: border-box;
+			margin: 0 auto;
+			background: white;
+			box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .3);
+			font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+			hyphens: auto;
+			transition: .5s font-size;
+			min-height: 100vh;
+		}
+
+		h1,
+		h2 {
+			page-break-after: avoid;
+			margin-bottom: .4em;
+			font: var(--font-heading);
+		}
+
+		h1 {
+			margin-top: 1em;
+			font-size: 180%;
+		}
+
+		h2 {
+			margin-top: 1em;
+			font-size: 150%;
+			color: hsl(20, 15%, 50%);
+			font-weight: bold;
+		}
+
+		a {
+			color: #4F6128;
+		}
+
+		q {
+			font-style: italic;
+		}
+
+		abbr[title] {
+			border-bottom: 1px dotted #4F6128;
+			cursor: help;
+		}
+
+		p {
+			margin: .6em 0;
+		}
+
+		h1+p,
+		h2+p {
+			margin-top: 0;
+		}
+
+		ul {
+			padding: 0;
+			list-style: square;
+		}
+
+		ul ul {
+			padding-left: 3em;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		header>h1 {
+			color: #7F7F7F;
+			color: hsl(20, 15%, 50%);
+			border-bottom: 1px solid #9BBB59;
+			margin: 0 0 .15em;
+			text-indent: 1.2em;
+			font-size: 300%;
+			line-height: 1.05;
+			font-variant: normal;
+		}
+
+		header>h1>span {
+			display: inline-block;
+			margin-left: -2.7em;
+			vertical-align: super;
+			font-size: 50%;
+		}
+
+		header>ul {
+			display: block;
+			margin-bottom: .5em;
+		}
+
+		header>ul>li {
+			display: inline;
+			list-style: none;
+		}
+
+		header>ul>li:before {
+			content: '● ';
+		}
+
+		header>ul>li:first-child:before {
+			content: none;
+		}
+
+		address {
+			font-style: normal;
+		}
+
+		section section {
+			page-break-inside: avoid;
+		}
+
+		section>h1 {
+			--offset: calc(-5vw - .1em);
+			box-shadow: calc(var(--offset) + .7em) 0 white, var(--offset) 0 0 -.1em;
+			border-bottom: 1px solid #9BBB59;
+		}
+
+		li {
+			page-break-inside: avoid;
+		}
+
+		ol.timeline {
+			padding: 0;
+			/* border: 0 solid #ddd;
+			border-width: 4px 0; */
+		}
+
+		ol.timeline>li {
+			list-style: none;
+			padding: .4em 0;
+			border: 1px solid white;
+			/* Chrome printing bug */
+			border-top-color: #ccc;
+		}
+
+		ol.timeline>li:first-child {
+			border-top: 0;
+		}
+
+		ol.timeline>li>p {
+			margin: 0;
+		}
+
+		ol.timeline>li>.date {
+			float: left;
+			margin-left: .1em;
+			max-width: 12rem;
+			color: gray;
+			font: var(--font-heading);
+			font-size: 110%;
+		}
+
+		ol.timeline>li>.date~p {
+			margin-left: 12rem;
+		}
+
+		.note {
+			margin-top: .4em;
+			font-size: 90%;
+		}
+
+		.note a:not(:hover):not(:active) {
+			color: inherit;
+		}
+
+		footer {
+			margin-top: 3em;
+			font-style: italic;
+		}
+
+		.amp {
+			font-style: italic;
+		}
+
+		#projects .timeline li p:nth-of-type(2) a:first-of-type {
+			font-weight: bold;
+		}
+
+		@media (max-width:950px) {
+			html {
+				font-size: 12px;
+			}
+		}
+
+		@media (max-width:700px) {
+			html {
+				font-size: 11px;
+			}
+		}
+
+		@media (max-width:600px) {
+			body {
+				width: auto;
+				margin: 1em;
+			}
+		}
+
+		@media print {
+			@page {
+				size: letter;
+				margin: 2cm 2.5cm;
+			}
+
+			section>h1 {
+				--offset: -9vw;
+			}
+
+			html {
+				background: none;
+				font-size: 11.5pt;
+			}
+
+			body {
+				box-shadow: none;
+				padding: 0;
+			}
+
+			footer {
+				display: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Md. Sahab Uddin <span>CV</span></h1>
+		<ul>
+			<li style="margin-right: 10px;"><a href="mailto:shehabull2023@gmail.com"
+					target="_blank">shehabull2023@gmail.com</a></li>
+			<li style="margin-right: 10px;"><a href="tel:+8801824471868">+8801824471868</a></li>
+			<li style="margin-right: 10px;"><a href="https://www.linkedin.com/in/md-sahab-uddin-26923758/"
+					target="_blank">linkedin</a></li>
+			<li><a href="https://github.com/shehabull" target="_blank">GitHub</a></li>
+		</ul>
+	</header>
+
+	<section id="biography">
+		<h1>Objective</h1>
+		<p>As a dedicated and certified front-end developer with a proven track record of over a decade, my objective is
+			to
+			leverage my extensive expertise in web accessibility, usability, SEO, web performance, and security to
+			create visually
+			stunning and user-friendly websites. I am passionate about taking ownership of projects, guiding teams, and
+			ensuring the
+			delivery of high-quality code through rigorous QA testing. My ultimate goal is to contribute my skills and
+			knowledge to
+			a forward-thinking team, where I can make a meaningful impact and continue to excel in the dynamic world of
+			web
+			development. Front-end development isn't just my profession; it's a lifelong passion and an integral part of
+			my
+			identity.</p>
+	</section>
+
+
+	<section id="technical-skills">
+		<h1>Professional Summary</h1>
+		<ul style="margin-left: 50px;">
+			<li>Certified front-end developer with 10+ years of web development experience.</li>
+			<li>Expertise in web accessibility, usability, SEO, and security.</li>
+			<li>Dedicated to crafting visually appealing and user-friendly websites.</li>
+			<li>Proactive problem-solver who takes ownership of projects and leads teams to success.</li>
+			<li>Proficient in a wide range of technologies, from HTML and CSS to ReactJS.</li>
+			<li>Committed to continuous improvement and staying up-to-date with industry trends.</li>
+			<li>Passionate about creating innovative web solutions and delivering exceptional user experiences.</li>
+			<li>Front-end development is not just a career; it's a lifelong passion and a commitment to excellence.</li>
+		</ul>
+	</section>
+
+	<section id="work-experience">
+		<h1>Work experience</h1>
+
+		<ol class="timeline">
+			<li>
+				<p class="date">2015-Present</p>
+				<p>SENIOR UI ENGINEER • <a href="https://brainstation-23.com/" target="_blank">Brain Station 23
+						Limited</a></p>
+
+
+				<ul class="timeline" style="margin-left: 13rem;">
+					<li>Collaborated with the design team to transform wireframes and mockups into responsive and
+						visually appealing web applications.</li>
+					<li>Developed and maintained frontend components using HTML, CSS, and JavaScript, ensuring
+						cross-browser compatibility and optimal performance.</li>
+					<li>Utilized React.js to build dynamic, data-driven user interfaces, improving overall user
+						experience.</li>
+					<li>Implemented web accessibility standards, enhancing the accessibility of web content for all
+						users.</li>
+					<li>Worked closely with backend developers to integrate APIs and optimize application functionality.
+					</li>
+					<li>Conducted code reviews, identified and resolved bugs, and implemented performance enhancements.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="date">2014 –2015</p>
+				<p>Web Programmer • <a href="https://boo2.com.bd/" target="_blank">Boo2 Bangla Ltd</a></p>
+				<ul class="timeline" style="margin-left: 13rem;">
+					<li>Played a key role in the development of a client's e-commerce website, resulting in a 20%
+						increase in conversion rates.</li>
+					<li>Designed and implemented responsive web layouts, ensuring a seamless user experience across
+						devices.</li>
+					<li>UCollaborated with UX/UI designers to maintain a consistent and visually appealing design
+						language.</li>
+					<li>Employed version control systems such as Git for code management and collaboration.</li>
+					<li>Participated in Agile development processes, contributing to sprint planning and retrospectives.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="date">Sep 1, 2011–Sep 14, 2013</p>
+				<p>Front end developer &amp; designer • <a href="http://www.mavrickit.com/" target="_blank">Mavrick
+						Software and Telecom Service Inc.</a></p>
+				<ul class="timeline" style="margin-left: 13rem;">
+					<li>Develop clean, efficient, and responsive frontend code using HTML, CSS, and JavaScript.</li>
+					<li>Collaborate closely with senior developers, designers, and cross-functional teams to understand
+						and meet project
+						requirements.</li>
+					<li>Utilize version control systems like Git to manage code changes and collaborate with team
+						members.</li>
+					<li>Conduct testing and quality assurance to ensure frontend components meet project specifications.
+					</li>
+					<li>Stay updated with the latest frontend development trends, frameworks, and best practices to
+						continually enhance skills
+						and contribute to project success.</li>
+				</ul>
+			</li>
+		</ol>
+	</section>
+
+
+
+
+	<section id="education">
+		<h1>Education</h1>
+		<ol class="timeline">
+			<li>
+				<p class="date">2013–2016</p>
+				<p><strong>B Sc in Engineering in Computer Science and Engineering </strong></p>
+				<p><a href="http://www.wub.edu.bd/" target="_blank">World University of Bangladesh</a></p>
+			</li>
+			<li>
+				<p class="date">2006–2011</p>
+				<p><strong>Diploma in Engineering in Computer Technology </strong></p>
+				<p><a href="http://www.comillapoly.gov.bd/" target="_blank">Comilla Polytechnic Institute</a></p>
+			</li>
+		</ol>
+	</section>
+
+
+	<section id="technical-skills">
+		<h1>Technical skills</h1>
+		<p>I have a broad understanding of the full Open Web Stack of technologies, including:</p>
+
+
+		<p style="margin-bottom: 0;"><b> Frontend Technologies :</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>HTML/HTML5, CSS/CSS3 (Bootstrap, Tailwind CSS, Sass, BEM, PostCSS)</li>
+			<li>JavaScript (ECMAScript), ReactJS, jQuery, StorybookJS</li>
+			<li>DOM Mastery and Web Accessibility (WAI-ARIA)</li>
+		</ul>
+
+
+
+		<p style="margin-bottom: 0;"><b>Design Tools:</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>Photoshop, Figma, InVision</li>
+		</ul>
+
+
+		<p style="margin-bottom: 0;"><b>Version Control:</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>Git</li>
+		</ul>
+
+		<p style="margin-bottom: 0;"><b>Design Methodology:</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>Atomic Design</li>
+		</ul>
+
+
+		<p style="margin-bottom: 0;"><b>Additional Proficiencies:</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>PHP, SQL, and more</li>
+		</ul>
+
+
+
+		<p style="margin-bottom: 0;"><b>Additional Skills:</b></p>
+
+		<ul class="timeline" style="margin-left: 40px;">
+			<li>Responsive Design</li>
+			<li>Cross-Browser Compatibility</li>
+			<li>SEO Best Practices</li>
+			<li>UI/UX Design Principles</li>
+			<li>Problem Solving</li>
+			<li>Collaboration and Teamwork</li>
+		</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+
+	<section id="projects">
+		<h1>Some Selected Projects</h1>
+		<ol class="timeline">
+
+			<li>
+				<p class="date">AbbVie Pro</p>
+				<p><a href="https://www.abbviepro.com/" target="_blank">AbbVie Pro</a></p>
+				<p>
+					<b>Technology Used:</b> Adobe Experience Manager, HTML- 5, CSS-3, SCSS (SMA css), Bootstrap- 4, CSS
+					Atomic Design, BEM, StoryBookJs JavaScript & Gulp.
+				</p>
+				<p>
+					<b>Technical Responsibility:</b> Oversees the development of the business and implement visual
+					elements that users see and interact within
+					a web application and is in charge of the latest processes and technology in order to build
+					scalable, distributed, and fault-tolerant site
+					systems. Also leads the frontend team in building elegant and sophisticated user interfaces.
+				</p>
+				<p><b>Short Description:</b> Abbviepro.com aims to create a digital standard for HCP audiences who seek
+					AbbVie products and services. All brand
+					teams can use the platform for HCP commercial activity.</p>
+			</li>
+
+
+			<li>
+				<p class="date">GLPG HCP Portal</p>
+				<p><a href="https://inflammation.glpg.uk/" target="_blank">GLPG HCP Portal</a></p>
+				<p>
+					<b>Technology Used:</b>Adobe Experience Manager, HTML- 5, CSS-3, SCSS(SMA css), Bootstrap- 4, CSS
+					Atomic Design, BEM, StoryBookJs, JavaScript, React js,
+					Storybook react & Gulp
+				</p>
+				<p>
+					<b>Technical Responsibility:</b> Oversees the development of the business and implement visual
+					elements that users see and interact within
+					a web application and is in charge of the latest processes and technology in order to build
+					scalable, distributed, and fault-tolerant site
+					systems. Also leads the frontend team in building elegant and sophisticated user interfaces.
+				</p>
+				<p><b>Short Description:</b> This website is for Galapagos a pioneering biotechnology company, focused
+					on making a difference to people with
+					inflammatory diseases. The Galapagos IBD community website aims to provide healthcare professionals
+					in the IBD community with a
+					dynamic hub of engaging and up-to-date IBD content.
+				</p>
+			</li>
+
+
+			<li>
+				<p class="date">Splash360</p>
+				<p>
+					<b>Technology Used:</b>AFront-end Technology: HTML5, CSS3, LESS, CSS Sprite, Responsive Design &
+					Email Template, jQuery etc.
+				</p>
+				<p><a href="https://www.splash360.com/" target="_blank">Splash360</a>: Email Marketing · Digital
+					Printing · Social Media · Contact Management · Applicaton</p>
+				<p><b>Technical Responsibility:</b> My responsibility is fornt end development and email templeate
+					desigin and development </p>
+
+				<p> <b>Short Description:</b> Splash360, it will help your marketing made simple including Email
+					Marketing (easily create bold, highimpact, emails that look great and deliver
+					results. Just drag-n-drop your way to a customized design, add your photos and
+					text, then send. It really is just that easy. Better yet, all our templates are mobile
+					ready and will display pixel-perfect on any device!). Contact Management
+					(manage contacts, track deals, and improve your sales productivity. Anywhere,
+					anytime). Reports (easily measurable how many emails were sent, how many
+					were opened, who opened them, and what they clicked on, greatly improving your
+					marketing performance and effectiveness). Digital Printing and Social Media
+				</p>
+			</li>
+
+			<li>
+
+				<p>A lot more of my projects, here is some links:
+				<ul style="margin-left: 50px; margin-bottom: 15px;">
+					<li><a href="https://www.skyrizi.eu/" target="_blank">AbbVie Skyrizi</a></li>
+					<li><a href="https://www.rinvoq.eu/" target="_blank">Abbvie Rinvoq</a></li>
+					<li><a href="https://www.let-me-be-clear.com/" target="_blank">Let Me Be Clear</a></li>
+					<li><a href="https://www.talkoverra.com/" target="_blank">Talk Over RA</a></li>
+					<li><a href="https://www.lets-talk-eczema.com" target="_blank">ADPA</a></li>
+					<li><a href="https://piap.abbvie.net/" target="_blank">PIAP</a></li>
+					<li><a href="https://www.galapagosevents.com/" target="_blank">Galapagos Events</a></li>
+				</ul>
+
+				</p>
+			</li>
+
+		</ol>
+	</section>
+
+	<section id="achivements">
+		<h1>Achivements</h1>
+
+		<ul style="margin-left: 50px;">
+			<li>
+				<a href="https://coursera.org/share/c9c9e93d146c4a3d22d3d8dcf9afb93b"><strong>Meta Front-End Developer |
+						2023</strong>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.credly.com/badges/79f3f694-10b9-401a-893d-6fd402e6786e/linked_in_profile"><strong>Microsoft
+						Certified HTML and CSS Developer (MTA) | 2019</strong>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+
+	<section id="languages">
+		<h1>Languages</h1>
+		<ul style="margin-left: 50px;">
+			<li><strong>Bangla</strong>: Native</li>
+			<li><strong>English</strong>: fluent </li>
+		</ul>
+	</section>
+
+	<section id="interests">
+		<h1>Professional interests</h1>
+		<p>Open web standards,
+			user experience, UI design,
+			web development education,
+			front-end web development,
+			API design,
+			web accessibility,
+			technical writing,
+			graphic design, color science, typography</p>
+	</section>
+
+	<!-- 
+	<section id="personal-details">
+		<h1>Personal Details</h1>
+		<ol class="timeline">
+			<li>
+				<p class="date">Date of Birth</p>
+				<p>December 31, 1988</p>
+			</li>
+			<li>
+				<p class="date">Nationality</p>
+				<p>Bangladeshi</p>
+			</li>
+			<li>
+				<p class="date">National Id No.</p>
+				<p>7510745543574</p>
+			</li>
+			<li>
+				<p class="date">Current Location</p>
+				<p>Agargaon, Sher-E-Bangla nagar 1207 Dhaka,Bangladesh</p>
+			</li>
+		</ol>
+	</section>
+
+	<footer>
+		<p>References are available upon request.</p>
+	</footer> -->
+
+	<script>
+		(function () {
+			if (!document.querySelectorAll) return;
+			var external = document.querySelectorAll('a[href^="http://"], a[href^="https://"]'), a;
+			for (var i = external.length; a = external[--i];) a.setAttribute('target', '_blank');
+		})();
+	</script>
+
+
+</body>
+
+</html>

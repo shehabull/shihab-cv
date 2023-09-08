@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <meta charset="utf-8" />
+  <title>Md. Sahab Uddin's Resume</title>
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    /**
+ * "Variables"
+ */
+    :root {
+      --font-heading: small-caps normal 100% Constantia, "Palatino Linotype",
+        Palatino, Georgia, serif;
+    }
+
+    h1,
+    header>h1>span,
+    header>ul>li:before {
+      color: #9bbb59;
+    }
+
+    /**
+ * Style
+ */
+
+    * {
+      margin: 0;
+    }
+
+    html {
+      /* background: #9BA2B0; */
+      font-size: 16px;
+    }
+
+    body {
+      width: 65em;
+      padding: 3em 5%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+      font: 100%/1.6 "Segoe UI", Optima, "Hiragino Kaku Gothic Pro",
+        "Apple Gothic", Tahoma, "Helvetica Neue", sans-serif;
+      hyphens: auto;
+      transition: 0.5s font-size;
+      min-height: 100vh;
+    }
+
+    h1,
+    h2 {
+      page-break-after: avoid;
+      margin-bottom: 0.4em;
+      font: var(--font-heading);
+    }
+
+    h1 {
+      margin-top: 1em;
+      font-size: 180%;
+    }
+
+    h2 {
+      margin-top: 1em;
+      font-size: 150%;
+      color: hsl(20, 15%, 50%);
+      font-weight: bold;
+    }
+
+    a {
+      color: #4f6128;
+    }
+
+    q {
+      font-style: italic;
+    }
+
+    abbr[title] {
+      border-bottom: 1px dotted #4f6128;
+      cursor: help;
+    }
+
+    p {
+      margin: 0.6em 0;
+    }
+
+    h1+p,
+    h2+p {
+      margin-top: 0;
+    }
+
+    ul {
+      padding: 0;
+      list-style: square;
+    }
+
+    ul ul {
+      padding-left: 3em;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header>h1 {
+      color: #7f7f7f;
+      color: hsl(20, 15%, 50%);
+      border-bottom: 1px solid #9bbb59;
+      margin: 0 0 0.15em;
+      text-indent: 1.2em;
+      font-size: 300%;
+      line-height: 1.05;
+      font-variant: normal;
+    }
+
+    header>h1>span {
+      display: inline-block;
+      margin-left: -2.7em;
+      vertical-align: super;
+      font-size: 50%;
+    }
+
+    header>ul {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    header>ul>li {
+      display: inline;
+      list-style: none;
+    }
+
+    header>ul>li:before {
+      content: "● ";
+    }
+
+    header>ul>li:first-child:before {
+      content: none;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    section section {
+      /* page-break-inside: avoid; */
+    }
+
+    section>h1 {
+      --offset: calc(-5vw - 0.1em);
+      box-shadow: calc(var(--offset) + 0.7em) 0 white,
+        var(--offset) 0 0 -0.1em;
+    }
+
+    li {
+      page-break-inside: avoid;
+    }
+
+    ol.timeline {
+      padding: 0;
+      border: 0 solid #ddd;
+      border-width: 4px 0;
+    }
+
+    ol.timeline>li {
+      list-style: none;
+      padding: 0.4em 0;
+      border: 1px solid white;
+      /* Chrome printing bug */
+      border-top-color: #ccc;
+    }
+
+    ol.timeline>li:first-child {
+      border-top: 0;
+    }
+
+    ol.timeline>li>p {
+      margin: 0;
+    }
+
+    ol.timeline>li>.date {
+      float: left;
+      margin-left: 0.1em;
+      max-width: 12rem;
+      color: gray;
+      font: var(--font-heading);
+      font-size: 110%;
+    }
+
+    ol.timeline>li>.date~p {
+      margin-left: 12rem;
+    }
+
+    .note {
+      margin-top: 0.4em;
+      font-size: 90%;
+    }
+
+    .note a:not(:hover):not(:active) {
+      color: inherit;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-style: italic;
+    }
+
+    .amp {
+      font-style: italic;
+    }
+
+    #projects .timeline li p:nth-of-type(2) a:first-of-type {
+      font-weight: bold;
+    }
+
+    @media (max-width: 950px) {
+      html {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      html {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        width: auto;
+        margin: 1em;
+      }
+    }
+
+    @media print {
+      @page {
+        size: letter;
+        margin: 2cm 2.5cm;
+      }
+
+      section>h1 {
+        --offset: -9vw;
+      }
+
+      html {
+        background: none;
+        font-size: 11.5pt;
+      }
+
+      body {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <p>
+      <b>Md.Sahab Uddin</b><br />
+      <b>Dhaka 1207, Bangladesh</b><br />
+      <a href="shehabull2023@gmail.com">shehabull2023@gmail.com</a><br />
+      <a href="+8801824471868">+8801824471868</a>
+      <br /><br />
+    </p>
+
+    Dear Hiring Manager,
+
+
+    I apologize for the oversight. Here's a completely generic cover letter:
+
+
+
+    Dear Hiring Manager,
+
+    <p>I am writing to express my strong interest in the front-end developer position at your organization. With over a
+      decade
+      of experience in web development and a deep passion for creating user-friendly and visually stunning websites, I
+      am
+      excited about the opportunity to contribute my skills to your dynamic team.</p>
+
+    <p>
+      Throughout my career, I have honed my expertise in a wide range of areas, including web accessibility, usability,
+      SEO,
+      web performance, and security. I have a proven track record of transforming wireframes and mockups into responsive
+      and
+      aesthetically pleasing web applications. My proficiency in HTML, CSS, and JavaScript, coupled with my knowledge of
+      React.js, enables me to develop dynamic and data-driven user interfaces that enhance the overall user experience.
+    </p>
+
+    <p>One of my core strengths is my ability to lead and guide teams effectively. In my previous roles, I have managed
+      teams,
+      provided guidance, set best practices, and fostered a collaborative work environment. My commitment to
+      high-quality code
+      and thorough QA testing ensures that projects are delivered with exceptional results.</p>
+
+    <p>
+      I am well-versed in version control systems like Git and have a strong background in Atomic Design principles.
+      Additionally, my experience with content management systems (CMS) such as AEM, Drupal, WordPress, and Joomla adds
+      versatility to my skill set, allowing me to excel in different development environments.
+    </p>
+
+    <p>
+      I am committed to staying up-to-date with industry trends and continuously improving my skills. Front-end
+      development is
+      not just a job for me; it's a lifelong passion and an integral part of my identity.
+    </p>
+
+    <p>I am excited about the possibility of joining your organization and contributing to your mission. I look forward
+      to the
+      opportunity to discuss how my skills and experiences align with your needs.</p>
+
+    <p>Thank you for considering my application. Please find my resume attached for your review. I am available at your
+      convenience for an interview and can be reached at <a href="+8801824471868">+8801824471868</a>
+      or <a href="shehabull2023@gmail.com">shehabull2023@gmail.com</a><br />.
+    </p>
+
+    <p>
+      Sincerely,<br />
+      Md. Sahab Uddin
+    </p>
+
+  </section>
+
+  <script>
+    (function () {
+      if (!document.querySelectorAll) return;
+      var external = document.querySelectorAll(
+        'a[href^="http://"], a[href^="https://"]'
+      ),
+        a;
+      for (var i = external.length; (a = external[--i]);)
+        a.setAttribute("target", "_blank");
+    })();
+  </script>
+</body>
+
+</html>
